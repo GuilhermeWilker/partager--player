@@ -1,0 +1,35 @@
+{
+  "home": {
+    "listen": "Ouça boas musicas!",
+    "song": "Músicas"
+  },
+  "song": {
+    "comment_count": "Não há comentários | 1 comentário | {count} comments",
+    "button": "Enviar",
+    "select_option1": "Mais recentes",
+    "select_option2": "Mais antigos"
+  },
+  "auth": {
+    "header": "Olá usuário!",
+    "register": "Criar conta"
+  },
+  "register": {
+    "accept": "Eu aceito os {0}",
+    "tos": "Termos de Serviço",
+    "name": "Nome",
+    "age": "Idade",
+    "password": "Senha",
+    "confirm_password": "Confirme sua senha",
+    "country": "País"
+  },
+  "login": {
+    "password": "Senha"
+  },
+  "manage": {
+    "my_songs": "Minhas músicas",
+    "song_title": "Título",
+    "genre": "Gênero",
+    "submit": "Enviar",
+    "go_back": "Voltar"
+  }
+}

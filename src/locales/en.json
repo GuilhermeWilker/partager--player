@@ -1,0 +1,35 @@
+{
+  "home": {
+    "listen": "Listen to Great Music!",
+    "song": "Songs"
+  },
+  "song": {
+    "comment_count": "No comments | 1 comment | {count} comments",
+    "button": "Submit",
+    "select_option1": "Latest",
+    "select_option2": "Oldest"
+  },
+  "auth": {
+    "header": "Hello user!",
+    "register": "Register"
+  },
+  "register": {
+    "accept": "Eu aceito os {0}",
+    "tos": "Termps de Serviço",
+    "name": "Name",
+    "age": "Age",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "country": "Country"
+  },
+  "login": {
+    "password": "Password"
+  },
+  "manage": {
+    "my_songs": "My Songs",
+    "song_title": "Song Title",
+    "genre": "Genre",
+    "submit": "Submit",
+    "go_back": "Go Back"
+  }
+}
