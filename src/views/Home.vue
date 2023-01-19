@@ -214,4 +214,39 @@ main {
     display: none;
   }
 }
+
+@media (max-width: 400px) {
+  .hero {
+    width: 100%;
+    height: 240px;
+
+    margin-top: -75px;
+  }
+
+  .hero-info {
+    padding-left: 80px;
+
+    width: 320px;
+  }
+
+  .hero-info h1 {
+    font-size: 23px;
+  }
+
+  .hero-info p {
+    font-size: 13px;
+  }
+
+  .hero-info p:nth-child(2n) {
+    display: none;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .container-music {
+    width: 315px;
+  }
+}
 </style>

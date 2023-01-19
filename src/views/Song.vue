@@ -1,24 +1,16 @@
 <template>
   <main>
     <!-- Music Header -->
-    <section class="w-full mb-8 py-14 text-center text-white relative">
-      <div
-        class="absolute inset-0 w-full h-full box-border bg-contain music-bg"
-        style="background-image: url(/assets/img/song-header.png)"
-      ></div>
-      <div class="container mx-auto flex items-center">
+    <section class="music-header">
+      <div class="player">
         <!-- Play/Pause Button -->
-        <button
-          @click.prevent="newSong(song)"
-          type="button"
-          class="z-50 h-20 w-20 text-1xl bg-white text-black rounded-full focus:outline-none"
-        >
+        <button @click.prevent="newSong(song)" type="button" class="btn-player">
           <i class="fas fa-play"></i>
         </button>
-        <div class="z-50 text-left ml-8">
+        <div>
           <!-- Song Info -->
-          <div class="text-3xl font-bold">{{ song.modified_name }}</div>
-          <div>{{ song.genre }}</div>
+          <h1 class="text-2xl font-bold">{{ song.modified_name }}</h1>
+          <p>{{ song.genre }}</p>
         </div>
       </div>
     </section>
@@ -209,3 +201,47 @@ export default {
   },
 };
 </script>
+
+<style>
+.music-header {
+  background-color: #2778f2;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player {
+  padding: 25px;
+  box-sizing: border-box;
+
+  width: 530px;
+  height: 173px;
+
+  background: #2793f2;
+  border: 3px solid #000000;
+  box-shadow: 6px 6px 0px #000000;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.player h1 {
+  font-size: 25px;
+}
+
+.btn-player {
+  width: 90px;
+  height: 90px;
+
+  background: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 50%;
+
+  color: black;
+}
+</style>
