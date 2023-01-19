@@ -60,7 +60,7 @@
       <!-- Navbar -->
       <ul
         v-if="showMenu"
-        class="menu-itens animate__animated animate__fadeInRight"
+        class="menu-itens animate__animated animate__fadeInLeft"
       >
         <ul class="flex flex-columns mt-1">
           <li>
@@ -197,6 +197,7 @@ export default {
     display: none;
   }
   .nav-bar-mobile {
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -205,18 +206,18 @@ export default {
   .nav-bar-mobile button {
     position: fixed;
     right: 30px;
-    padding: 8px;
+    padding: 20px;
     font-size: 25px;
   }
   .logo {
     position: fixed;
   }
   .menu-itens {
-    z-index: 8;
+    z-index: 10;
     padding: 15px 30px;
     position: relative;
     top: 175px;
-    left: 107px;
+    right: 105px;
     background-color: #c6ff7e;
     border: 3px solid black;
     flex-direction: column;
@@ -234,7 +235,7 @@ export default {
   }
   .header {
     width: 100%;
-    margin: 30px auto;
+    margin: 0px auto;
 
     border-radius: 0px;
   }

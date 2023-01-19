@@ -4,8 +4,15 @@
     <section class="music-header">
       <div class="player">
         <!-- Play/Pause Button -->
-        <button @click.prevent="newSong(song)" type="button" class="btn-player">
-          <i class="fas fa-play"></i>
+        <button
+          @click.prevent="newSong(song), toggleAudio"
+          type="button"
+          class="btn-player"
+        >
+          <i
+            class="fas"
+            :class="{ 'fa-play': !playing, 'fa-pause': playing }"
+          ></i>
         </button>
         <div>
           <!-- Song Info -->
@@ -140,7 +147,7 @@ export default {
     this.getComments();
   },
   methods: {
-    ...mapActions(usePlayerStore, ["newSong"]),
+    ...mapActions(usePlayerStore, ["newSong", "toggleAudio"]),
     async addComment(values, { resetForm }) {
       this.comment_in_submission = true;
       this.comment_show_alert = true;
@@ -150,7 +157,7 @@ export default {
 
       const comment = {
         content: values.comment,
-        datePosted: new Date().toString(),
+        datePosted: new Date().toLocaleTimeString("pt-BR").toString(),
         sid: this.$route.params.id,
         name: auth.currentUser.displayName,
         uid: auth.currentUser.uid,
@@ -243,5 +250,28 @@ export default {
   border-radius: 50%;
 
   color: black;
+}
+
+@media (max-width: 600px) {
+  .player {
+    width: 332px;
+    height: 133px;
+
+    background: #2793f2;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0px #000000;
+    border-radius: 10px;
+  }
+
+  .player h1 {
+    font-size: 15px;
+  }
+
+  .btn-player {
+    width: 60px;
+    height: 60px;
+
+    border: 2px solid #000000;
+  }
 }
 </style>

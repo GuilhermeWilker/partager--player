@@ -12,7 +12,7 @@
             com nosso player de música incrível!!
           </p>
         </div>
-        <img class="" src="assets/img/char-home.png" />
+        <img class="" src="/assets/img/char-home.png" />
       </section>
     </main>
     <section class="music-box">
