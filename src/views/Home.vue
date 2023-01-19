@@ -173,10 +173,45 @@ main {
 }
 
 .container-music {
-  /*bg-white rounded border border-gray-200 relative flex flex-col*/
-
   background-color: white;
   border: 1px solid rgb(230, 230, 230);
   width: 1000px;
+}
+
+@media (max-width: 1040px) {
+  .container-music {
+    width: 800px;
+  }
+
+  .hero {
+    width: 700px;
+  }
+
+  .hero img {
+    width: 278px;
+    height: 302px;
+
+    bottom: 126px;
+    left: 480px;
+  }
+}
+
+@media (max-width: 770px) {
+  .container-music {
+    width: 600px;
+  }
+
+  .hero {
+    width: 650px;
+  }
+
+  .hero-info {
+    align-self: center;
+    padding-left: 80px;
+  }
+
+  .hero img {
+    display: none;
+  }
 }
 </style>

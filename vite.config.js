@@ -15,8 +15,8 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: "Partagé Player",
-        short_name: "Partagé",
+        name: "Partager Player",
+        short_name: "Partager",
         theme_color: "#2778F2",
         icons: [
           {

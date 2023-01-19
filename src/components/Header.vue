@@ -114,4 +114,14 @@ export default {
   border-radius: 5px;
   color: white;
 }
+
+@media (max-width: 1040px) {
+  .header {
+    width: 600px;
+  }
+
+  .nav-bar {
+    gap: 40px;
+  }
+}
 </style>
