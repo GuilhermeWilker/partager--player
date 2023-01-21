@@ -229,7 +229,6 @@ export default {
     justify-content: center;
     justify-content: space-between;
     gap: 30px;
-
     padding-bottom: 35px;
     width: 100px;
   }
