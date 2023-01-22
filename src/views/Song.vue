@@ -5,14 +5,11 @@
       <div class="player">
         <!-- Play/Pause Button -->
         <button
-          @click.prevent="newSong(song), toggleAudio"
+          @click.prevent="toggleAudio, newSong(song)"
           type="button"
           class="btn-player"
         >
-          <i
-            class="fas"
-            :class="{ 'fa-play': !playing, 'fa-pause': playing }"
-          ></i>
+          <i class="fas" :class="iconClass"></i>
         </button>
         <div>
           <!-- Song Info -->
@@ -130,6 +127,9 @@ export default {
 
         return new Date(a.datePosted) - new Date(b.datePosted);
       });
+    },
+    iconClass() {
+      return this.playing ? "fa-pause" : "fa-play";
     },
   },
   async created() {
