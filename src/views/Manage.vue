@@ -107,4 +107,10 @@ export default {
 template {
   background-color: #2778f2;
 }
+
+@media (max-width: 400px) {
+  .container {
+    margin: 90px auto;
+  }
+}
 </style>

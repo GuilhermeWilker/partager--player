@@ -176,4 +176,106 @@
   background: #232323;
   border-radius: 3px;
 }
+
+@media (max-width: 500px) {
+  .about {
+    margin: 20px auto 0;
+  }
+  .title {
+    margin-top: 50px;
+    width: 332px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .paragraph {
+    margin: 35px 0 10px 0;
+    width: 288px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+
+    color: #000000;
+  }
+
+  .about-form {
+    padding: 45px 20px;
+    width: 460px;
+    height: 391px;
+
+    margin-top: 50px;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+
+    display: none;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    background: white;
+  }
+
+  .name_input label {
+    font-weight: 600;
+    font-size: 15px;
+
+    color: #000000;
+  }
+
+  .name_input input {
+    padding: 13px 10px;
+    width: 168px;
+    height: 41px;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+  }
+
+  .email_input label {
+    font-weight: 600;
+    font-size: 15px;
+
+    color: #000000;
+  }
+
+  .email_input input {
+    padding: 13px 10px;
+    width: 222px;
+    height: 41px;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+  }
+
+  .text_area label {
+    font-weight: 600;
+    font-size: 15px;
+
+    color: #000000;
+  }
+
+  .text_area textarea {
+    padding: 13px 10px;
+
+    width: 409px;
+    height: 151px;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  .about-form button {
+    margin: 0 30%;
+    padding: 12px 63px;
+    color: white;
+
+    border: 1px solid #d9d9d9;
+    background: #232323;
+    border-radius: 3px;
+  }
+}
 </style>

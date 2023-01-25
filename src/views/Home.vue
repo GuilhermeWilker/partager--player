@@ -109,7 +109,6 @@ export default {
 
 <style scoped>
 main {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,6 +215,9 @@ main {
 }
 
 @media (max-width: 400px) {
+  main {
+    margin: 90px auto 0;
+  }
   .hero {
     width: 100%;
     height: 240px;

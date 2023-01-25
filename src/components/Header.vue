@@ -30,7 +30,7 @@
         :to="{ name: 'home' }"
         exact-active-class="no-active"
       >
-        Partagé
+        Partager
       </router-link>
 
       <ul class="ml-auto">
@@ -46,13 +46,14 @@
       </ul>
     </nav>
 
+    <!-- Navbar Mobile -->
     <nav class="nav-bar-mobile">
       <router-link
         class="logo font-bold uppercase text-2xl mr-4"
         :to="{ name: 'home' }"
         exact-active-class="no-active"
       >
-        Partagé
+        Partager
       </router-link>
       <button class="menu-toggle" @click="toggleMenu">
         <i class="fas fa-bars"></i>
@@ -150,9 +151,11 @@ export default {
 }
 
 .header {
-  z-index: 2;
+  z-index: 10;
+  position: relative;
 
   margin: 30px auto;
+
   width: 874px;
   height: 90px;
 
@@ -204,20 +207,23 @@ export default {
     justify-content: space-around;
   }
   .nav-bar-mobile button {
-    position: fixed;
+    position: absolute;
     right: 30px;
     padding: 20px;
     font-size: 25px;
   }
   .logo {
-    position: fixed;
+    position: absolute;
   }
   .menu-itens {
     z-index: 10;
     padding: 15px 30px;
     position: relative;
-    top: 175px;
-    right: 105px;
+
+    top: 292px;
+    right: 117px;
+    height: 500px;
+
     background-color: #c6ff7e;
     border: 3px solid black;
     flex-direction: column;
@@ -233,6 +239,7 @@ export default {
     width: 100px;
   }
   .header {
+    position: fixed;
     width: 100%;
     margin: 0px auto;
 
@@ -245,6 +252,24 @@ export default {
 
   .nav-bar ul {
     display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu-itens {
+    top: 292px;
+    right: 105px;
+
+    height: 500px;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu-itens {
+    top: 292px;
+    right: 77px;
+
+    height: 500px;
   }
 }
 </style>

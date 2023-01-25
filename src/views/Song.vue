@@ -273,5 +273,11 @@ export default {
 
     border: 2px solid #000000;
   }
+
+  @media (max-width: 400px) {
+    .music-header {
+      margin: 90px auto;
+    }
+  }
 }
 </style>
