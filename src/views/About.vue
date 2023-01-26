@@ -40,23 +40,38 @@
     <!-- Tópico 3 -->
     <h1 class="title">Sinta-se livre para compartilhar sugestões ao projeto</h1>
     <!-- formulário sugestões -->
-    <form action="" class="about-form">
+    <form
+      action="https://formsubmit.co/wilkerguilherme0@gmail.com"
+      class="about-form"
+      method="POST"
+    >
+      <input type="hidden" name="_captcha" value="false" />
+
       <div class="name_input">
         <label for="name">Nome:</label><br />
-        <input type="text" name="name" placeholder="Joab Manoel" />
+        <input type="text" name="name" placeholder="Joab Manoel" required />
       </div>
 
       <div class="email_input">
         <label for="email">Email:</label><br />
-        <input type="email" name="email" placeholder="joab_manoel@email.com" />
+        <input
+          type="email"
+          name="email"
+          placeholder="joab_manoel@email.com"
+          required
+        />
       </div>
 
       <div class="text_area">
         <label for="msg">Sua mensagem:</label><br />
-        <textarea name="msg" placeholder="lorem ipsum dolor..."></textarea>
+        <textarea
+          name="msg"
+          placeholder="Sua sugestão aqui..."
+          required
+        ></textarea>
       </div>
 
-      <button>Enviar</button>
+      <input type="submit" value="Enviar" id="submit" class="button" />
     </form>
   </div>
 </template>
@@ -167,7 +182,7 @@
   resize: none;
 }
 
-.about-form button {
+.about-form .button {
   margin: 0 30%;
   padding: 12px 63px;
   color: white;
@@ -204,14 +219,14 @@
 
   .about-form {
     padding: 45px 20px;
-    width: 460px;
-    height: 391px;
+    width: 318px;
+    height: 100%;
 
     margin-top: 50px;
     border: 1px solid #d9d9d9;
     border-radius: 16px;
 
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     gap: 18px;
 
@@ -260,7 +275,7 @@
   .text_area textarea {
     padding: 13px 10px;
 
-    width: 409px;
+    width: 275px;
     height: 151px;
 
     border: 1px solid #d9d9d9;
@@ -268,8 +283,8 @@
     resize: none;
   }
 
-  .about-form button {
-    margin: 0 30%;
+  .about-form .button {
+    margin: 0 auto;
     padding: 12px 63px;
     color: white;
 
